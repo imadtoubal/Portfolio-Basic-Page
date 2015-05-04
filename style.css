@@ -1,0 +1,239 @@
+/*initializing*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+    color: #666666;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #8f729f;
+    letter-spacing: 5px;
+}
+section{
+    padding: 50px 0px;
+}
+section:nth-child(2n+1){
+    background: hsl(0, 0%, 95%);
+}
+.content{
+    margin: auto;
+    max-width: 650px;
+    padding: 10px
+}
+.content p{
+    text-align: center;
+}
+a{
+    color: #e3e3e3;
+    text-decoration: none;
+    transition: color .2s;
+}
+a:hover{
+    color: #656565;
+}
+input, textarea{
+    margin: 0;
+    padding: 3%;
+    outline-width: 0px;
+    outline-offset: 0px;
+}
+/*About*/
+#about .social img{
+    width: 50px;
+    margin: 0 5px;
+    opacity: .2;
+    transition: all .2s;
+}
+#about .social img:hover{
+    opacity: .5;
+}
+#about h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+/*header*/
+header{
+    display: block;
+    height: 550px;
+    background: url(res/Glacier%20Sunrise.jpg);
+    background-size: cover;
+    outline: #efefef solid 10px;
+    margin-bottom: 50px;
+}
+header *{
+    color: white;
+}
+header h1{
+    letter-spacing: 20px;
+}
+nav{
+    padding: 20px;
+    
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline;
+    padding: 0 10px;
+    text-transform: uppercase;
+    line-height: 50px;
+    transition: all .2s;
+}
+nav li:hover{
+    background: white;
+}
+nav img{
+    height: 50px;
+    float: left;
+}
+.title{
+    clear: both;
+    margin: 150px auto 20px;
+    font-size: 2em;
+    width: 80%;
+    border: solid 10px;
+    font-family: Axis;
+}
+header h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.twitter{
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: #efefef solid 10px;
+    position: relative;
+    top: 120px;
+}
+.twitter img{
+    width: 100%;
+    
+}
+/*portfolio*/
+.images{
+    max-width: 650px;
+    margin: 50px 0;
+}
+#portfolio h2{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+#portfolio h2 a{
+    color: #b2b2b2;
+}
+.image{
+    height: 100px;
+    width: 32%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.image:nth-child(1){
+    background: url(res/img1.jpg);
+    background-size: cover;
+}
+.image:nth-child(2){
+    background: url(res/img2.jpg);
+    background-size: cover;
+}
+.image:nth-child(3){
+    background: url(res/img3.jpg);
+    background-size: cover;
+}
+.image:nth-child(4){
+    background: url(res/img4.jpg);
+    background-size: cover;
+}
+.image:nth-child(5){
+    background: url(res/img5.jpg);
+    background-size: cover;
+}
+.image:nth-child(6){
+    background: url(res/img6.jpg);
+    background-size: cover;
+}
+
+.overlay{
+    background: rgba(209, 110, 217, 0.65);
+    width: 100%;
+    height: 100%;
+    transform: translate(0,100%);
+    transition: all .2s;
+    padding-top: 10%;
+}
+.overlay img{
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+.image:hover .overlay{
+    transform: translate(0,0);
+    cursor: pointer;
+}
+
+
+/*contact*/
+#contact .content *{
+    margin: 5px;
+    text-align: center;
+}
+input[type="text"], textarea{
+    background: rgba(143, 114, 159, 0.14);
+    border: none;
+}
+#contact input[type="text"]{
+    width: 80%;
+}
+textarea{
+    width: 80%;
+}
+
+
+input[type="submit"]{
+    background: #8f729f;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+    max-width: 100%;
+}
+#contact input, #contact textarea{
+    margin: 0 auto;
+}
+
+/*footer*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 50%;
+    background-image: url('res/Glacier%20Sunrise%20footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer *{
+    color: #8f729f;
+}
+
+
+
+/*Additional*/
+a[href="#home"]{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: .5;
+    transition: all .4s;
+    clear: both;
+}
+a[href="#home"]:hover{
+    opacity:1;
+}
